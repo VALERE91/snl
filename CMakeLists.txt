@@ -17,6 +17,7 @@ if(NOT TARGET Corrosion::Generator)
 endif()
 
 corrosion_import_crate(MANIFEST_PATH Cargo.toml)
+target_include_directories(snl INTERFACE ${CMAKE_SOURCE_DIR}/snl/include)
 
 if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
     add_subdirectory(samples/cpp)
