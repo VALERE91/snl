@@ -8,7 +8,7 @@
 int main() {
     std::cout << "[C++] Starting UDP Socket..." << std::endl;
 
-    // 1. Create the socket (Bind to port 8080)
+    // Create the socket (Bind to port 8080)
     // In a real game, client might bind to "0.0.0.0:0" to get a random port
     GameSocket* sock = net_socket_create("127.0.0.1:8080");
     

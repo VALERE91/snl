@@ -18,4 +18,6 @@ endif()
 
 corrosion_import_crate(MANIFEST_PATH Cargo.toml)
 
-add_subdirectory(samples/cpp)
+if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
+    add_subdirectory(samples/cpp)
+endif()
